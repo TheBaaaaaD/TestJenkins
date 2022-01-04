@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Secure</title>
+<meta name="description" content="Roughly 155 characters">
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="script.js"></script>
+<!doctype html>
+<style>
+body { 
+
+    
+    font-family: 'Roboto';
+    font-weight: 200;
+    font-style: normal;
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article ads"
+    "nav footer footer";
+  grid-template-rows: 80px 1fr 70px;  
+  grid-template-columns: 20% 1fr 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }  
+header {
+  padding: 1.2em;
+  background: #659224;
+  }
+footer {
+  padding: 1.2em;
+  background: #000000;
+  }
+article {
+  padding: 1.2em;
+  background: white;
+  }
+nav {
+  padding: 1.2em;
+  background: #379EC1;
+  }
+div {
+  padding: 1.2em;
+  background: gold;
+  }
+#pageHeader {
+  grid-area: header;
+  }
+#pageFooter {
+  grid-area: footer;
+  text-align: center;
+  color: white;
+  }
+#mainArticle { 
+  grid-area: article;      
+  }
+#mainNav { 
+  grid-area: nav; 
+  }
+
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
+}
+</style>
+<body>
+  <header id="pageHeader"><h1>Go Securi</h1></header>
+  <article id="mainArticle">
+      
+    <h2>Selection de l'agent :</h2> <select name="agent" id="agent-select">
+        <option value="">--Choisir l'agent--</option>
+        <option value="2">employé un </option>
+        <option value="2">employé deux </option>
+    </select>
+
+    <h2>Selection du materiel :</h2> <select name="materiel" id="materiel-select1">
+        <option value="">--Choisir le materiel--</option>
+        <option value="2">materiel un </option>
+        <option value="2">materiel deux </option>
+    </select>
+
+    <h2>Selection du materiel :</h2> <select name="materiel" id="materiel-select2">
+        <option value="">--Choisir le materiel--</option>
+        <option value="2">materiel un </option>
+        <option value="2">materiel deux </option>
+    </select>
+
+    <h2>Selection du materiel :</h2> <select name="materiel" id="materiel-select3">
+        <option value="">--Choisir le materiel--</option>
+        <option value="2">materiel un </option>
+        <option value="2">materiel deux </option>
+    </select>
+  </article>
+  <nav id="mainNav">Nav</nav>
+  <footer id="pageFooter">Website create for MSPR by DE CORT Thibaut, HANI Elyass, RHARIB Adlane</footer>
+</body>
